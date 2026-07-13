@@ -1,53 +1,178 @@
-🏠 House Price Prediction using Machine Learning
+# 🏠 House Price Prediction using Machine Learning
 
-📌 Project Overview:
+A machine learning project that predicts house prices based on property characteristics and amenities. The project includes data preprocessing, exploratory data analysis, model building, performance evaluation, and business insights to understand the factors that influence housing prices.
 
-This project focuses on predicting house prices based on various property features using machine learning models. The dataset includes attributes such as area, number of bedrooms, bathrooms, stories, and amenities like air conditioning, parking, and furnishing status. The goal is to analyze the data, clean it, visualize key patterns, and build predictive models to estimate house prices accurately.
+---
 
-📊 Dataset Features:
+## 📌 Overview
 
-The dataset contains the following columns:
+Accurately estimating house prices is valuable for buyers, sellers, and real estate professionals. This project analyzes housing data to identify the factors affecting property prices and builds machine learning models capable of predicting house values based on property features.
 
-• Price (Target variable) • Area • Bedrooms • Bathrooms • Stories • Mainroad • Guestroom • Basement • Hot water heating • Air conditioning • Parking • Pref area • Furnishing status
+The project emphasizes both predictive performance and interpretability, helping users understand which property characteristics contribute most to house prices.
 
-⚙️ Workflow:
+---
 
-Data Loading & Exploration Loaded dataset using Pandas
+## 📂 Dataset
 
-Checked dataset shape, structure, and missing values Identified target and feature columns
+The dataset contains residential property information with the following features:
 
-Data Cleaning Handled missing values Removed duplicate entries Converted categorical variables using one-hot encoding Prepared dataset for machine learning
+### **Target Variable**
+- **Price**
 
-Model Building Split dataset into training (80%) and testing (20%) Trained two models: Linear Regression Random Forest Regressor Evaluated models using: MAE (Mean Absolute Error) RMSE (Root Mean Squared Error) R² Score
+### **Features**
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Mainroad
+- Guestroom
+- Basement
+- Hot Water Heating
+- Air Conditioning
+- Parking
+- Preferred Area
+- Furnishing Status
 
-📈 Visualization:
+The dataset contains a mix of numerical and categorical variables.
 
-Three key visualizations were created:
+---
 
-• Distribution of house prices (Histogram)
+## 🚀 Project Workflow
 
-• Correlation heatmap of features
+### 1. Data Loading & Exploration
 
-• Actual vs Predicted price comparison
+- Loaded the dataset using Pandas
+- Inspected dataset shape and structure
+- Checked data types
+- Identified missing values
+- Explored feature distributions
+- Defined target and predictor variables
 
-💡 Key Insights:
+---
 
-• Larger houses generally have higher prices
+### 2. Data Cleaning & Preprocessing
 
-• Amenities significantly impact house value
+- Handled missing values
+- Removed duplicate records
+- Applied One-Hot Encoding to categorical variables
+- Prepared the dataset for machine learning
+- Split features and target variable
 
-• Non-linear models like Random Forest capture patterns better than simple regression
+---
 
-🛠️ Tools & Technologies:
+### 3. Exploratory Data Analysis (EDA)
 
-• Python
+Performed data analysis to better understand relationships between property features and house prices, including:
 
-• Pandas
+- Distribution of house prices
+- Correlation among numerical features
+- Relationship between area and price
+- Effect of amenities on house prices
+- Feature importance through correlation analysis
 
-• NumPy
+---
 
-• Matplotlib
+### 4. Model Building
 
-• Scikit-learn
+The dataset was divided into:
 
-• Jupyter Notebook
+- **Training:** 80%
+- **Testing:** 20%
+
+Two regression models were trained and compared:
+
+- Linear Regression
+- Random Forest Regressor
+
+---
+
+### 5. Model Evaluation
+
+Models were evaluated using:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+Performance metrics were compared to identify the model with the highest predictive accuracy.
+
+---
+
+### 6. Visualizations
+
+The project includes:
+
+- 📊 House Price Distribution (Histogram)
+- 🔥 Feature Correlation Heatmap
+- 📈 Actual vs Predicted House Prices
+
+---
+
+## 📊 Key Insights
+
+- Larger houses generally command higher market prices.
+- Properties with additional amenities such as air conditioning, parking, and preferred locations tend to have higher values.
+- The number of bathrooms and overall living area are among the strongest indicators of price.
+- Random Forest captures complex, non-linear relationships more effectively than Linear Regression, resulting in improved prediction accuracy.
+
+---
+
+## 💡 Applications
+
+- Estimate house prices based on property features.
+- Support real estate investment decisions.
+- Assist buyers and sellers with property valuation.
+- Provide insights into the factors that influence housing prices.
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## 📁 Project Structure
+
+```
+House-Price-Prediction/
+│
+├── data/
+│   └── Housing.csv
+│
+├── notebooks/
+│   └── House_Price_Prediction.ipynb
+│
+├── images/
+│   ├── price_distribution.png
+│   ├── correlation_heatmap.png
+│   └── actual_vs_predicted.png
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
+- Experiment with XGBoost, LightGBM, and CatBoost
+- Perform feature selection and engineering
+- Deploy the model as a Streamlit web application
+- Add SHAP values for model explainability
+- Build an interactive dashboard for house price prediction
+
+---
+
+## 👨‍💻 Author
+
+**Raihan Valiyakath Mohamed**
+
+- B.Tech Computer Science & Business Systems (CSBS)
+- Python | Machine Learning | Data Analytics | AI
